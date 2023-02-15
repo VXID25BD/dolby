@@ -18,4 +18,19 @@
             max-width: 500px;
         }
     }
+
+    .statistics{
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+        li{
+            font-weight: $fw-semibold;
+            line-height: 28px;
+            color: $color-white_050;
+            
+            span{font-weight: $fw-light;}
+        }
+    }
 }
