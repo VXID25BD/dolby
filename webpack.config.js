@@ -13,6 +13,7 @@ module.exports = {
     resolve: {
       alias: {
         Components: "/src/components/",
+        Assets: "/src/assets/",
       }
     },
     plugins: [

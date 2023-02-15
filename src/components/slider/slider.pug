@@ -1,6 +1,15 @@
-div(class="slider")
-	div(class="slider__wrapper")
-		block slides
-	div(class="slider__buttons")
-		div(class="slider__button-prev")
-		div(class="slider__button-next")
+mixin slider(className, title, items)
+	.slider
+		.slider__header
+			h3= title
+			.slider__actions
+				+button-arrow("Browse More")
+				.slider__navigation
+					button.slider__button-prev
+					button.slider__button-next
+		div(class=`swiper-container slider-${className}`)
+			.slider__wrapper.swiper-wrapper
+				each item in items
+					.swiper-slide
+						+card-features-artworks(item.title, item.description, item.price, item.imgSrc, item.imgAlt)
+			.slider__buttons

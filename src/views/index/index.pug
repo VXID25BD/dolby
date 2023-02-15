@@ -1,12 +1,16 @@
 //- include mixins
 include Components/ui/buttons/button-arrow/button-arrow.pug
 include Components/ui/typography/body/b1/b1.pug
+include Components/features-artworks/card-features-artworks/card-features-artworks.pug
+include Components/slider/slider.pug
 
 html(lang="ru")
     head
         meta(name="description", content="WEBPACK CONFIG LANDING")
         meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+
         link(href=require("../../assets/styles/styles.scss") rel="stylesheet")
         title Dolby
     body
@@ -19,4 +23,5 @@ html(lang="ru")
                 include Components/premier-marketplace/premier-marketplace.pug
                 include Components/recent-activity/recent-activity.pug
             include Components/footer/footer.pug
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js") 
         script(src=require("./main.js"))
