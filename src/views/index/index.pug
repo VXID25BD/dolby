@@ -4,13 +4,18 @@
 html(lang="ru")
     head
         meta(name="description", content="WEBPACK CONFIG LANDING")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
         link(href=require("../../assets/styles/styles.scss") rel="stylesheet")
-        title WEBPACK CONFIG PUG 2023
+        title Dolby
     body
         .root 
             include ../../components/header/header.pug
             main.page
-                // include ../../components/hero/hero.pug
+                include ../../components/hero/hero.pug
+                include ../../components/features-artworks/features-artworks.pug
+                include ../../components/subscribe/subscribe.pug
+                include ../../components/premier-marketplace/premier-marketplace.pug
+                include ../../components/recent-activity/recent-activity.pug
             include ../../components/footer/footer.pug
         script(src=require("./main.js"))

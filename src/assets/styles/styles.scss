@@ -2,32 +2,46 @@
 @import "nullstyles";
 @import "vars";
 
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: $fw-bold;
-    font-size: 60px;
+    font-size: 80px;
 }
 
-h2{font-size: 56px;}
-h3{font-size: 48px;}
-h4{font-size: 36px;}
-h5{font-size: 24px;}
-h6{font-size: 20px;}
+h2{font-size: 48px;}
+h3{font-size: 36px;}
+h4{
+    font-size: 18px;
+    font-weight: $fw-semibold;
+}
 
 .outer{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 
 .container{
     width: 100%;
-    max-width: 1170px;
+    max-width: $limited;
     margin: 0 auto;
 }
+
+/* MAIN GRID */
+.root{
+    background: $color-bg-linear;
+    display: flex;
+    flex-direction: column
+}
+
+.page{flex: 1 1 auto;}
 
 /* COMPONENTS */
 @import "../../components/header/header.scss";
 @import "../../components/hero/hero.scss";
+@import "../../components/features-artworks/features-artworks.scss";
+@import "../../components/subscribe/subscribe.scss";
+@import "../../components/premier-marketplace/premier-marketplace.scss";
+@import "../../components/recent-activity/recent-activity.scss";
 @import "../../components/footer/footer.scss";
-
 /* UI */

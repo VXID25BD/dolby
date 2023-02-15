@@ -1,9 +1,9 @@
 // font-family
-$ff-primary: "";
-$ff-secondary: "";
+$ff-primary: "Poppins", sans-serif;
+$ff-secondary: "Josefin Sans", sans-serif;
 
 // container limited
-$limited: 1180px;
+$limited: 1170px;
 
 // media breakpoints
 $points-sm: 576.98px;
@@ -23,3 +23,6 @@ $fw-extrabold: 800;
 // colors
 $color-black: #000;
 $color-white: #fff;
+$color-yellow: #FDC500;
+
+$color-bg-linear: linear-gradient(108.13deg, #320000 1%, #0F0323 37.66%, #322204 72.27%, #000230 98.74%);
