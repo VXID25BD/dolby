@@ -10,6 +10,11 @@ module.exports = {
         publicPath: '/',
         filename: 'assets/js/[name].[contenthash:8].js'
     },
+    resolve: {
+      alias: {
+        Components: "/src/components/",
+      }
+    },
     plugins: [
         new PugPlugin({
             pretty: true,

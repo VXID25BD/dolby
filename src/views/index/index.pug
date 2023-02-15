@@ -1,6 +1,6 @@
 //- include mixins
-include ../../components/ui/buttons/button-arrow/button-arrow.pug
-include ../../components/ui/typography/body/b1/b1.pug
+include Components/ui/buttons/button-arrow/button-arrow.pug
+include Components/ui/typography/body/b1/b1.pug
 
 html(lang="ru")
     head
@@ -11,12 +11,12 @@ html(lang="ru")
         title Dolby
     body
         .root 
-            include ../../components/header/header.pug
+            include Components/header/header.pug
             main.page
-                include ../../components/hero/hero.pug
-                include ../../components/features-artworks/features-artworks.pug
-                include ../../components/subscribe/subscribe.pug
-                include ../../components/premier-marketplace/premier-marketplace.pug
-                include ../../components/recent-activity/recent-activity.pug
-            include ../../components/footer/footer.pug
+                include Components/hero/hero.pug
+                include Components/features-artworks/features-artworks.pug
+                include Components/subscribe/subscribe.pug
+                include Components/premier-marketplace/premier-marketplace.pug
+                include Components/recent-activity/recent-activity.pug
+            include Components/footer/footer.pug
         script(src=require("./main.js"))

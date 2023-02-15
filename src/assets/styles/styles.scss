@@ -46,14 +46,14 @@ h5{
 .page{flex: 1 1 auto;}
 
 /* COMPONENTS */
-@import "../../components/header/header.scss";
-@import "../../components/hero/hero.scss";
-@import "../../components/features-artworks/features-artworks.scss";
-@import "../../components/subscribe/subscribe.scss";
-@import "../../components/premier-marketplace/premier-marketplace.scss";
-@import "../../components/recent-activity/recent-activity.scss";
-@import "../../components/footer/footer.scss";
+@import "Components/header/header.scss";
+@import "Components/hero/hero.scss";
+@import "Components/features-artworks/features-artworks.scss";
+@import "Components/subscribe/subscribe.scss";
+@import "Components/premier-marketplace/premier-marketplace.scss";
+@import "Components/recent-activity/recent-activity.scss";
+@import "Components/footer/footer.scss";
 
 /* UI */
-@import "../../components/ui/typography/body/b1/b1.scss";
-@import "../../components/ui/buttons/button-arrow/button-arrow.scss";
+@import "Components/ui/typography/body/b1/b1.scss";
+@import "Components/ui/buttons/button-arrow/button-arrow.scss";

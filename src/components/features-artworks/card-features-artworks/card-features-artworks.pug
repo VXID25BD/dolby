@@ -1,0 +1,18 @@
+mixin card-features-artworks(title, description, price, imgSrc, imgAlt)
+    div(class="card-features-artworks")&attributes(attributes)
+        .card-features-artworks__wrapper 
+            .card-features-artworks__header
+                .card-features-artworks__img 
+                    img(src=imgSrc, alt=imgAlt)
+            .card-features-artworks__content 
+                .card-features-artworks__title= title 
+                .card-features-artworks__description= description 
+                .card-features-artworks__price-row
+                    | Price
+                    .card-features-artworks__price-wrapper 
+                        | icon
+                        span.card-features-artworks__price €
+                            =price
+                .card-features-artworks__footer
+                    .card-features-artworks__like 
+                    
