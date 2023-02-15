@@ -5,15 +5,14 @@ mixin card-features-artworks(title, description, price, imgSrc, imgAlt)
                 .card-features-artworks__img 
                     img(src=imgSrc, alt=imgAlt)
             .card-features-artworks__content 
-                h5 title 
-                .card-features-artworks__description= description 
+                h5= title 
+                +b2(description)
                 .card-features-artworks__price-row
                     | Price
-                    .card-features-artworks__price-wrapper 
-                        | icon
-                        span.card-features-artworks__price €
-                            =price
+                    span.card-features-artworks__price €
+                        =price
                 .card-features-artworks__footer
                     .card-features-artworks__like
+                        include ../../../assets/icons/icon-like.svg
                     +button-buy("BUY")
                     

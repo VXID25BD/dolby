@@ -4,6 +4,7 @@
 
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $ff-secondary;
     font-weight: $fw-bold;
     font-size: 80px;
 }
@@ -61,5 +62,6 @@ body{overflow-x: hidden;}
 
 /* UI */
 @import "Components/ui/typography/body/b1/b1.scss";
+@import "Components/ui/typography/body/b2/b2.scss";
 @import "Components/ui/buttons/button-arrow/button-arrow.scss";
 @import "Components/ui/buttons/button-buy/button-buy.scss";
