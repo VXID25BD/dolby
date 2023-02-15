@@ -5,8 +5,10 @@ mixin slider(className, title, items)
 			.slider__actions
 				+button-arrow("Browse More")
 				.slider__navigation
-					button.slider__button-prev
-					button.slider__button-next
+					button.slider__button.slider__button-prev
+						include ../../assets/icons/icon-angle-left.svg
+					button.slider__button.slider__button-next
+						include ../../assets/icons/icon-angle-right.svg
 		div(class=`swiper-container slider-${className}`)
 			.slider__wrapper.swiper-wrapper
 				each item in items
