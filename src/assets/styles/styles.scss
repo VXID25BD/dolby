@@ -8,13 +8,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 80px;
 }
 
+h1{
+    line-height: 80px;
+    letter-spacing: 0.1em;
+}
 h2{font-size: 48px;}
 h3{font-size: 36px;}
 h4{
+    font-size: 24px;
+    font-weight: $fw-semibold;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+}
+h5{
     font-size: 18px;
     font-weight: $fw-semibold;
 }
-
 .outer{
     padding-right: 15px;
     padding-left: 15px;
@@ -44,4 +53,6 @@ h4{
 @import "../../components/premier-marketplace/premier-marketplace.scss";
 @import "../../components/recent-activity/recent-activity.scss";
 @import "../../components/footer/footer.scss";
+
 /* UI */
+@import "../../components/ui/typography/body/b1/b1.scss";
