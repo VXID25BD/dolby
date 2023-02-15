@@ -1,0 +1,17 @@
+header{
+    padding-top: 50px;
+
+    .logo{
+        color: $color-yellow;
+        font-weight: $fw-bold;
+        font-size: 36px;
+        line-height: 36px;
+
+        span{
+            color: $color-white;
+            transition: .5s;
+        }
+
+        &:hover span{color: $color-yellow;}
+    }
+}
