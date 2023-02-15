@@ -1,0 +1,16 @@
+.button-arrow{
+    font-weight: $fw-semibold;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    color: rgba($color-white, .75);
+    
+    svg{
+        width: 35px;
+        height: 16px;
+        fill: $color-yellow;
+    }
+}
