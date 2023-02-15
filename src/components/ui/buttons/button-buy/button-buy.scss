@@ -1,0 +1,12 @@
+.button-buy{
+    background-color: $color-yellow;
+    padding: 2px 19px;
+    font-weight: $fw-semibold;
+    line-height: 27px;
+    color: $color-black;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: .5s;
+
+    &:hover{background-color: darken($color-yellow, 10%);}
+}
