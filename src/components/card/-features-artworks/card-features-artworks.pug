@@ -9,8 +9,7 @@ mixin card-features-artworks(title, description, price, imgSrc, imgAlt)
                 +b2(description)
                 .card-features-artworks__price-row
                     | Price
-                    span.card-features-artworks__price €
-                        =price
+                    +card-price("25.00")
                 .card-features-artworks__footer
                     .card-features-artworks__like
                         include ../../../assets/icons/icon-like.svg

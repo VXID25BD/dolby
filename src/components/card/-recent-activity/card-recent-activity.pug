@@ -1,0 +1,7 @@
+mixin card-recent-activity(title, price, imgSrc, imgAlt)
+    div(class="card-recent-activity")&attributes(attributes)
+        .card-recent-activity__img 
+            img(src=imgSrc, alt=imgAlt)
+        .card-recent-activity__content 
+            h5= title 
+        +card-price("25.00")

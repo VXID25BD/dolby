@@ -34,22 +34,6 @@
         }
     }
     &__price{
-        position: relative;
-        padding-left: 20px;
-        font-weight: $fw-semibold;
-        font-size: 16px;
-        line-height: 24px;
-
-        &::before{
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 15px;
-            height: 24px;
-            background: url("../../assets/images/logo-etherium.png");
-        }
         &-row{
             display: flex;
             align-items: center;

@@ -52,12 +52,18 @@ body{overflow-x: hidden;}
 @import "Components/hero/hero.scss";
 
 @import "Components/slider/slider.scss";
+
+@import "Components/card/-price/card-price.scss";
+
 @import "Components/features-artworks/features-artworks.scss";
-@import "Components/features-artworks/card-features-artworks/card-features-artworks.scss";
+@import "Components/card/-features-artworks/card-features-artworks.scss";
 
 @import "Components/subscribe/subscribe.scss";
 @import "Components/premier-marketplace/premier-marketplace.scss";
+
 @import "Components/recent-activity/recent-activity.scss";
+@import "Components/card/-recent-activity/card-recent-activity.scss";
+
 @import "Components/footer/footer.scss";
 
 /* UI */
