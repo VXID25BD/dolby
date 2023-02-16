@@ -6,9 +6,7 @@
 
     .container{
         display: flex;
-        align-items: flex-start;
         justify-content: space-between;
-        position: relative;
     }
     &__col{
         &-content{
@@ -26,9 +24,8 @@
             }
         }
         &-images{
-            position: absolute;
-            right: 0;
-            top: 0;
+            position: relative;
+            height: 0;
         }
     }
     &__image{
@@ -58,6 +55,43 @@
             height: 180px;
             top: -407px;
             left: 18px;
+        }
+    }
+}
+
+@media (max-width: $point-xl){
+    .premier-marketplace{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .container{
+            justify-content: center;
+            text-align: center;
+        }
+        &__col-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{margin-bottom: 15px;}
+            .b1{margin-bottom: 30px;}
+        }
+        &__image{display: none;}
+    }
+}
+
+@media (max-width: $point-sm){
+    .premier-marketplace{
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__col-content{
+            h2{
+                font-size: 32px;
+                line-height: 42px;
+            }
+            .b1{
+                font-size: 14px;
+            }
         }
     }
 }

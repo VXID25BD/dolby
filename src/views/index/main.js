@@ -26,9 +26,6 @@ const sliderRecentActivity = new Swiper(".slider-recent-activity", {
     watchOverflow: false,
     breakpoints: {
       992.78: {
-        slidesPerView: 4,
-      },
-      768.78: {
         slidesPerView: 3,
       },
       576.78: {
