@@ -32,9 +32,14 @@
         border-radius: 50%;
         overflow: hidden;
         position: relative;
-
+        transition: .5s;
+        
         img{
             width: 100%;
+        }
+
+        &:hover{
+            transform: scale(125%);
         }
         &_lg{
             background-color: #94EEE5;

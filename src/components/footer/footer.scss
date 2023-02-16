@@ -28,7 +28,7 @@
                 color: $color-white_075;
                 transition: .3s;
                 
-                &:hover{color: $color-white;}
+                &:hover{color: $color-yellow;}
             }
         }
     }
@@ -64,6 +64,7 @@
                 justify-content: center;
             }
             &:hover{
+                background-color: $color-yellow;
                 transform: scale(120%);
             }
             &:hover svg{

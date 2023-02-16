@@ -12,5 +12,10 @@
         width: 35px;
         height: 16px;
         fill: $color-yellow;
+        transition: .3s;
+    }
+
+    &:hover svg{
+        transform: translateX(15px);
     }
 }

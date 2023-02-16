@@ -3,16 +3,23 @@
         margin-bottom: 20px;
         border-radius: 8px;
         overflow: hidden;
+        
+        img{
+            width: 100%;
+            transition: .5s;
+        }
 
-        img{width: 100%;}
+        &:hover img{
+            transform: scale(125%);
+        }
     }
     &__content{
         padding-right: 60px;
         margin-bottom: 15px;
 
-        h5{line-height: 28px;}
-    }
-    &__price{
-        
+        h5{
+            line-height: 28px;
+            color: $color-white_075;
+        }
     }
 }
