@@ -8,8 +8,11 @@
     }
     .b1{
         max-width: 650px;
-        margin: 0 auto 40px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
         line-height: 28px;
+        color: $color-white_050;
     }
 }
 
@@ -20,26 +23,31 @@
     &__wrapper{
         width: 100%;
         max-width: 700px;
-        display: flex;
-        align-items: center;
-        border: 1px solid $color-white;
-        border-radius: 50px;
+        position: relative;
     }
     &__input{
+        padding-top: 26px;
+        padding-bottom: 26px;
+        padding-right: 160px;
         padding-left: 40px;
         width: 100%;
         background-color: transparent;
         color: $color-white;
         font-size: 18px;
         line-height: 28px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
 
         &::placeholder{
             color: $color-white_050;
         }
     }
     &__button{
-        flex: 0 0 154px;
-        height: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px 33px;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -50,7 +58,39 @@
         line-height: 28px;
         color: $color-black_075;
         transition: .3s;
+        border: 1px solid $color-white;
 
-        &:hover{background-color: darken($color-white, 20%);}
+        &:hover{
+            background-color: $color-yellow;
+            border: 1px solid $color-yellow;
+        }
+    }
+}
+
+@media (max-width: $point-sm){
+    .subscribe{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        
+        h2{
+            font-size: 32px;
+        }
+        .b1{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    .form-subscribe{
+        &__input{
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-right: 120px;
+            padding-left: 14px;
+            font-size: 14px;
+        }
+        &__button{
+            padding: 0px 14px;
+            font-size: 14px;
+        }
     }
 }
