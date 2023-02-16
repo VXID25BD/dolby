@@ -34,3 +34,21 @@
         }
     }
 }
+
+@media (max-width: $point-md){
+    .slider{
+        &__header{
+            h3{font-size: 24px;}
+        }
+    }
+}
+
+@media (max-width: $point-sm){
+    .slider{
+        &__header{
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__navigation{display: none;}
+    }
+}
