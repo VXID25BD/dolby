@@ -9,10 +9,10 @@ mixin slider(className, title, items)
 						include ../../assets/icons/icon-angle-left.svg
 					button(class=`slider__button slider__button-next slider-${className}__button-next`)
 						include ../../assets/icons/icon-angle-right.svg
-		div(class=`swiper-container slider-${className}`)
+		div(class=`swiper-container slider-container slider-${className}`)
 			.slider__wrapper.swiper-wrapper
 				each item in items
-					.swiper-slide
+					.swiper-slide.slider-slide
 						if className === "features-artworks"
 							+card-features-artworks(item.title, item.description, item.price, item.imgSrc, item.imgAlt)
 						else
