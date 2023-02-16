@@ -49,9 +49,7 @@
 
         li{
             cursor: pointer;
-            flex: 0 0 55px;
-            width: 100%;
-            max-width: 55px;
+            width: 55px;
             height: 55px;
             background-color: rgba($color-white, .35);
             transition: .3s;
@@ -75,6 +73,43 @@
                 fill: $color-white_075;
                 transition: .3s;
                 height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point-lg){
+    .footer{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+        }
+        .community-footer{margin: 0;}
+        &__col + &__col{margin: 0;}
+        &__col{
+            &-title{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            ul{
+                gap: 10px;
+
+                li{font-size: 18px;}
+            }
+        }
+    }
+}
+
+@media (max-width: $point-sm){
+    .community-footer{
+        ul{
+            justify-content: space-between;
+
+            li{
+                width: 45px;
+                height: 45px;
             }
         }
     }
