@@ -1,1 +1,1 @@
-https://brilliant-1f48e.github.io/dolby/dist/
+https://VXID25BD.github.io/dolby/dist/
